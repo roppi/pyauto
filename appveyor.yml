@@ -1,9 +1,9 @@
 platform:
-#  - x64
-  - x86
+  - x64
+#  - x86
 
 install:
-  - MSBuild.exe pyauto.sln /target:Build /property:Configuration=Release,Platform=Win32
+  - MSBuild.exe pyauto.sln /target:Build /property:Configuration=Release,Platform=x64
   # - choco install doxygen.install -y
   - python makefile.py
 
