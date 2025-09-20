@@ -61,7 +61,8 @@ def exe():
     rmtree( DIST_DIR + "/sample" )
     shutil.copytree( "sample", DIST_DIR + "/sample", ignore=shutil.ignore_patterns(".svn","*.pyc","*.pyo") )
     rmtree( DIST_DIR + "/doc" )
-    shutil.copytree( "doc/html", DIST_DIR + "/doc", ignore=shutil.ignore_patterns(".svn") )
+    if os.path.exists("doc/html"):
+        shutil.copytree( "doc/html", DIST_DIR + "/doc", ignore=shutil.ignore_patterns(".svn") )
 
     if 1:
         os.chdir("dist")
