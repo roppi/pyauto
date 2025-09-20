@@ -8,8 +8,7 @@ import hashlib
 DIST_DIR = "dist/pyauto"
 DIST_SRC_DIR = "dist/src"
 
-PYTHON_DIR = "c:/Python37"
-PYTHON = PYTHON_DIR + "/python.exe"
+PYTHON = sys.executable
 SVN_DIR = "c:/Program Files/TortoiseSVN/bin"
 DOXYGEN_DIR = "c:/Program Files/doxygen"
 
