@@ -49,7 +49,7 @@ DIST_FILES = [
     ]
 
 def build():
-    doc()
+    # doc()
     exe()
 
 def exe():
